@@ -1,0 +1,223 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+h2 {
+    color: #2E2C2D;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+h3 {
+    color: #FF5C00;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+p {
+    line-height: 1.1rem;
+}
+
+/* MENU */
+.menu-nav{
+    display: none;
+}
+
+header .menu{
+    position: fixed;
+    height: 72px;
+    width: 100vw;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-logo {
+ width: 143px;
+}
+
+.icone-style {
+    font-size: 2rem;
+    color: black;
+}
+
+.button-icone {
+    border: none;
+    background: none;
+}
+
+.button-icone:hover {
+    cursor: pointer;
+}
+/* MENU fim */
+
+/* INICIO */
+main .inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#FF5C00 , #FB8000 );
+}
+
+.inicio-titulo {
+    margin-top: 14vh;
+    height: 30vh;
+    padding: 0 20px;
+}
+
+.inicio-imagem {
+    height:200px;
+    width: 200px;
+    margin-top: 4vh;
+}
+
+.inicio-texto {
+    margin-top: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: small;
+    line-height: 1rem;
+}
+/* INICIO fim */
+
+/* SOBRE */
+.sobre {
+    padding: 50px 20px 20px;
+}
+
+.sobre-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-texto {
+    margin: 30px;
+}
+
+.texto-centralizado {
+    text-align: center;
+}
+/* SOBRE fim */
+
+/* REDE */
+.rede {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#FB8000 ,#FF5C00);
+    padding: 20px;
+}
+
+.rede-cards {
+    display: flex;
+    width: 85vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #FFFFFF;
+    height: 140px;
+    width: 140px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-titulo {
+    text-align: center;
+    color: #FF5C00;
+    font-size: 1.5rem;
+}
+
+.card-texto {
+    text-align: center;
+}
+
+.rede-imagem {
+    width: 80vw;
+}
+/* REDE fim */
+
+/* SERVICOS */
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 50px;
+    background: #F2F2F2;
+}
+
+.servicos-box {
+    display: flex;
+    width: 85vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.servicos-vantagem {
+    background-color: #FFFFFF;
+    height: 180px;
+    width: 120px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.vantagem-icone {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.vantagem-divisor {
+    width: 75%;
+}
+
+.vantagem-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    text-align: center;
+    font-size: small;
+}
+/* SERVIÇOS fim */
+
+/* MAPA */
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 50px;
+    background: linear-gradient(#F2F2F2, #FFFFFF);
+}
+
+.mapa-imagem {
+    margin-top: 50px;
+    width: 85vw;
+}
+/* MAPA fim */
+
+/* CLIENTES */
+/* CLIENTES fim */
