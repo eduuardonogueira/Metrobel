@@ -60,7 +60,7 @@ header .menu{
 /* MENU fim */
 
 /* INICIO */
-main .inicio {
+.inicio {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -220,4 +220,79 @@ main .inicio {
 /* MAPA fim */
 
 /* CLIENTES */
+.clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 50px;
+}
+
+.clientes-texto {
+    margin-top: 20px;
+}
+
+.clientes-box {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 85vw;
+    flex-wrap: wrap;
+}
+
+.clientes-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* CLIENTES fim */
+
+/* CONTATO */
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 50px;
+    background-color: #1C1C1C;
+}
+
+.contato-conteudo {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.texto-principal {
+    grid-column: span 2;
+    margin: 20px 0 10px;
+}
+
+.texto-lateral {
+    grid-column: span 1;
+}
+
+.phone::before {
+    content: "✉";
+    font-size: 1.2rem;
+    color: #FF5C00;
+}
+
+.email::before {
+    content: "✉";
+    font-size: 1.2rem;
+    color: #FF5C00;
+}
+
+.mapa-maps {
+    margin-top: 40px;
+    width: 85vw;
+    height: 85vw;
+}
+
+.texto-branco {
+    color: #FFFFFF;
+}
+/* CONTATO fim */
