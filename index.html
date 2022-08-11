@@ -19,10 +19,10 @@
             <h1>
                 <img src="./img/logo-metrobel.png" class="menu-logo" alt="logo da metrobel">
             </h1>
-            <button class="button-icone">
-                <i class="ph-list icone-style"></i>
+            <button id="buttonMenu" class="button-icone">
+                <i id="menu" class="ph-list icone-style"></i>
             </button>
-            <ul class="menu-nav">
+            <ul id="nav" class="menu-nav">
                 <li>
                     <a href="#" class="menu-button">
                         Início
@@ -73,7 +73,7 @@
                     <h4>Conheça a Metrobel</h4>
             </div>
             <ul class="sobre-texto">
-                <li class="texto-centralizado">
+                <li class="texto-centralizado texto-paragrafo">
                     a rede metrobel é o primeiro dos novos projetos de rede <br>
                 </li>
                 <li class="texto-centralizado">
@@ -195,6 +195,7 @@
                     Veja a rede de um ponto <br>
                     de vista diferente
                 </h4>
+                <p class="mapa-texto">conheça as conexões que fazem parte da metrobel</p>
             </div>
             <img src="./img/mapa-metrobel.png" class="mapa-imagem" alt="mapa da metrobel">
         </section>
@@ -239,16 +240,35 @@
         <!-- CONTATO -->
         <section class="contato">
             <div class="contato-box texto-centralizado">
-                <h3>contato</h3>
+                <h3>Contato</h3>
                 <h4 class="texto-branco">Quer falar conosco?</h4>
-                <div class="contato-conteudo">
-                    <p class="texto-branco texto-principal">Fale com o PoP</p>
-                    <p class="phone texto-branco texto-lateral"> (91) 3201-7807 </p>
-                    <p class="email texto-branco texto-lateral"> suporte@pop-pa.rnp.br </p>
-                    
-                    <p class="texto-branco texto-principal">Fale com o Service Desk da RNP</p>
-                    <p class="phone texto-branco texto-lateral"> 0800 722 0216 </p>
-                    <p class="email texto-branco texto-lateral"> atendimento@rnp.br</p>
+                <div class="contato-conteudo texto-branco">
+
+                    <!-- POP -->
+                    <p class="conteudo-titulo">Fale com o PoP</p>
+                    <ul class="conteudo-informacoes">
+                        <li class="informacoes-box">
+                            <i class="ph-phone phone"></i>
+                            <p>(91) 3201-7807</p>
+                        </li>
+                        <li class="informacoes-box informacoes-div">
+                            <i class="ph-envelope-simple email"></i>
+                            <p>suporte@pop-pa.rnp.br</p>
+                        </li>
+                    </ul>
+
+                    <!-- SERVICE DESK -->
+                    <p class="conteudo-titulo">Fale com o Service Desk da RNP</p>
+                    <ul class="conteudo-informacoes">
+                        <li class="informacoes-box">
+                            <i class="ph-phone phone"></i>
+                            <p>0800 722 0216</p>
+                        </li>
+                        <li class="informacoes-box informacoes-div">
+                            <i class="ph-envelope-simple email"></i>
+                            <p>atendimento@rnp.br</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <iframe class="mapa-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.4961355872265!2d-48.4583491!3d-1.4750921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48d954dc59a23%3A0xe13488c30766bec4!2sCentro%20de%20Tecnologia%20da%20Informa%C3%A7%C3%A3o%20e%20Comunica%C3%A7%C3%A3o%20(CTIC)!5e0!3m2!1spt-BR!2sbr!4v1660164260744!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -256,6 +276,6 @@
         <!-- CONTATO fim -->
     </main>
 
-
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
