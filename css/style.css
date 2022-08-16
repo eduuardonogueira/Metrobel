@@ -137,6 +137,25 @@ header .menu{
     line-height: 1rem;
 }
 
+@media screen and (min-width: 420px) {
+    .inicio-imagem {
+        margin-top: unset;
+        height: 60vw;
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .inicio-imagem {
+        height: 400px;
+        width: 400px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .inicio {
         flex-direction: row;
@@ -312,7 +331,7 @@ header .menu{
 }
 
 .rede-imagem {
-    width: 80vw;
+    width: 312px;
 }
 
 @media screen and (min-width: 720px) {
@@ -431,7 +450,7 @@ header .menu{
 
     .servicos-vantagem {
         width: 12vw;
-        height: 15vw;
+        height: 14vw;
     }
 }
 
@@ -611,6 +630,12 @@ header .menu{
 
 }
 
+@media screen and (min-width: 520px) {
+    .contato-box {
+        width: 37px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .contato {
         flex-direction: row;
@@ -624,7 +649,7 @@ header .menu{
 
     
     .informacoes-div {
-        margin-left: 50px;
+        margin-left: 29px;
     }
 
     .mapa-maps {
@@ -642,6 +667,10 @@ header .menu{
 @media screen and (min-width: 1880px) {
     .contato-box {
         margin-left: 10vw;
+    }
+
+    .informacoes-div {
+        margin-left: 60px;
     }
 }
 /* CONTATO fim */
