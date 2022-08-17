@@ -105,6 +105,12 @@ header .menu{
         display: none;
     }
 }
+
+@media  screen and (min-width: 1440px) {
+    .menu-button {
+        font-size: 1.1rem;
+    }
+}
 /* MENU fim */
 
 /* INICIO */
@@ -143,6 +149,10 @@ header .menu{
         height: 60vw;
         width: 60vw;
     }
+
+    .inicio-texto {
+        width: 400px;
+    }
 }
 
 @media screen and (min-width: 650px) {
@@ -161,7 +171,7 @@ header .menu{
         flex-direction: row;
         justify-content: space-around;
         background: linear-gradient(115deg, #FF5C00 , #FB8000);
-        padding:  0 4vw 72px 4vw;
+        padding:  0 4vw 72px;
     }
 
     h2 {
@@ -171,29 +181,38 @@ header .menu{
     }
 
     .inicio-titulo {
-        height: unset;
         padding: unset;
+        margin-top: 72px;
+        margin-left: 20px;
     }
 
     .inicio-texto {
+        width: 460px;
         text-align: unset;
     }
 
     .inicio-imagem {
-        margin-top: unset;
+        margin-top: 72px;
         height: 450px;
         width: 450px;
     }
 } 
 @media screen and (min-width: 1240px) {
     .inicio-imagem {
-        height: 600px;
-        width: 600px;
+        height: 550px;
+        width: 550px;
     }
 
     h2 {
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    h2 {
         font-size: 3rem;
-        line-height: 4rem;
+        line-height: 3rem;
     }
 }
 
@@ -245,6 +264,11 @@ header .menu{
         text-align: unset;
     }
 
+    p, li, .vantagem-texto, .inicio-texto {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
     ul .texto-paragrafo {
         text-align: center;
     }
@@ -267,7 +291,7 @@ header .menu{
     }
 
     .sobre {
-        padding: 0 4vw 0 7vw; 
+        padding: 0 4vw;
         justify-content: space-around;
     }
 
@@ -294,30 +318,32 @@ header .menu{
 
 /* REDE */
 .rede {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg,#FB8000 ,#FF5C00);
-    padding: 20px;
 }
 
 .rede-cards {
-    display: flex;
     width: 85vw;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .card {
-    background-color: #FFFFFF;
     height: 140px;
     width: 140px;
-    border-radius: 5px;
+    padding: 0 10px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
 }
 
 .card-titulo {
@@ -328,6 +354,7 @@ header .menu{
 
 .card-texto {
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .rede-imagem {
@@ -346,12 +373,18 @@ header .menu{
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding: 4vw;
         background: linear-gradient(90deg,#FB8000 ,#FF5C00);
-        padding: 20px;
+        box-sizing: border-box;
     }
 
     .rede-imagem {
         width: 320px;
+    }
+
+    .card {
+        width: 13.7vw;
+        height: 13.7vw;
     }
 }
 
@@ -360,28 +393,42 @@ header .menu{
         width: 400px;
     }
 
+}
+
+@media screen and (min-width: 1440px){
     .card {
-        width: 160px;
+        height: 15vw;
+        width: 13vw;
+        padding: 10px;
+    }
+
+    .card-titulo {
+        font-size: 2.1rem;
+    }
+
+    .card-texto {
+        font-size: 1.1rem;
     }
 }
 
 @media screen and (min-width: 1880px) {
     .card {
-        width: 15vw;
+        width: 13vw;
         height: 10vw;
+        box-sizing: border-box;
+        margin-bottom: unset;
     }
 
     .card-titulo {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     
     .card-texto {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }   
 
     .rede-imagem {
         width: 600px;
-        margin-right: 60px;
     }
 }
 /* REDE fim */
@@ -407,7 +454,7 @@ header .menu{
 .servicos-vantagem {
     background-color: #FFFFFF;
     height: 180px;
-    width: 120px;
+    width: 130px;
     padding: 20px 10px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -417,8 +464,11 @@ header .menu{
 }
 
 .vantagem-icone {
+    display: flex;
+    justify-content: center;
     font-size: 4rem;
-    text-align: center;
+    background-color: aqua;
+    height: 49%;
 }
 
 .vantagem-divisor {
@@ -429,14 +479,15 @@ header .menu{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50%;
+    height: 49%;
     text-align: center;
     font-size: small;
+    background-color: #FF5C00;
 }
 
 @media screen and (min-width: 1024px) {
     .servicos {
-        padding: 100px 20px;
+        padding: 4vw;
     }
     
     .servicos-titulo {
@@ -451,6 +502,7 @@ header .menu{
     .servicos-vantagem {
         width: 12vw;
         height: 14vw;
+        margin-bottom: unset;
     }
 }
 
@@ -503,6 +555,7 @@ header .menu{
     .mapa {
         flex-direction: row;
         justify-content: space-around;
+        padding: 4vw;
     }
 
     .mapa-imagem {
@@ -528,9 +581,8 @@ header .menu{
 .clientes-box {
     margin-top: 40px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     width: 85vw;
     flex-wrap: wrap;
 }
@@ -539,17 +591,27 @@ header .menu{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 300px;
+}
+
+@media screen and (min-width: 650px) {
+    .clientes-box {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .clientes {
         flex-direction: row-reverse;
         justify-content: space-around;
-        padding: 50px 20px 75px;
+        padding: 4vw 4vw 8vw;
     }
 
     .clientes-box {
-        width: 60vw;
+        width: 52vw;
         margin-top: unset;
     }
 }
@@ -580,7 +642,10 @@ header .menu{
 }
 
 .contato-box {
-    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
 }
 
 .contato-conteudo {
@@ -588,11 +653,13 @@ header .menu{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .conteudo-informacoes {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -623,31 +690,37 @@ header .menu{
     color: #FFFFFF;
 }
 
-@media screen and (min-width: 470px) {
+@media screen and (min-width: 500px) {
     .conteudo-informacoes {
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 400px;
     }
 
-}
-
-@media screen and (min-width: 520px) {
-    .contato-box {
-        width: 37px;
+    .contato-conteudo {
+        align-items: center;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .contato {
         flex-direction: row;
-        justify-content: space-around;
         padding: unset;
     }
 
     .conteudo-informacoes {
-        justify-content: flex-start;
+        justify-content: space-around;
+        width: 100%;
     }
 
+    .contato-conteudo, .contato-titulo {
+        width: 384px;
+    }
     
+    .conteudo-titulo {
+        justify-content: flex-start;
+        width: 100%;
+    }
     .informacoes-div {
         margin-left: 29px;
     }
@@ -655,22 +728,17 @@ header .menu{
     .mapa-maps {
         margin-top: unset;
         width: 50vw;
-        height: 40vw;
+        height: 30vw;
     }
 
     .contato-box {
-        width: 35vw;
-        margin-left: 5vw;
+        width: 50vw;
     }
 }
 
-@media screen and (min-width: 1880px) {
-    .contato-box {
-        margin-left: 10vw;
-    }
-
-    .informacoes-div {
-        margin-left: 60px;
+@media screen and (min-width: 1440px) {
+    .contato-conteudo, .contato-titulo {
+        width: 425px;
     }
 }
 /* CONTATO fim */
