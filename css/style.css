@@ -222,6 +222,12 @@ header .menu{
         width: 800px;
     }
 
+    p.inicio-texto {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        width: 700px;
+    }
+
     h2 {
         font-size: 4.4rem;
         line-height: 5rem;
@@ -299,18 +305,18 @@ header .menu{
 
 @media screen and (min-width: 1880px) {
     h4 {
-        font-size: 2.6rem;
-        line-height: 3.5rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
 
     h3 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         margin-bottom: 10px;
     }
 
-    p , .inicio-texto, .sobre-texto, .mapa-texto, li {
-        font-size: 1.2rem;
-        line-height: 1.3rem;
+    p , .sobre-texto, .mapa-texto, li {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
     }
 }
 
@@ -389,6 +395,10 @@ header .menu{
 }
 
 @media screen and (min-width: 1240px) {
+    .rede {
+        padding: 2vw;
+    }
+    
     .rede-imagem {
         width: 400px;
     }
@@ -397,7 +407,7 @@ header .menu{
 
 @media screen and (min-width: 1440px){
     .card {
-        height: 15vw;
+        height: 13vw;
         width: 13vw;
         padding: 10px;
     }
@@ -412,6 +422,10 @@ header .menu{
 }
 
 @media screen and (min-width: 1880px) {
+    .rede {
+        padding: 2vw 10vw;
+    }
+    
     .card {
         width: 13vw;
         height: 10vw;
@@ -420,11 +434,11 @@ header .menu{
     }
 
     .card-titulo {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .card-texto {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }   
 
     .rede-imagem {
@@ -455,7 +469,7 @@ header .menu{
     background-color: #FFFFFF;
     height: 180px;
     width: 130px;
-    padding: 20px 10px;
+    padding: 20px;
     border-radius: 5px;
     margin-bottom: 10px;
     display: flex;
@@ -466,8 +480,8 @@ header .menu{
 .vantagem-icone {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 4rem;
-    background-color: aqua;
     height: 49%;
 }
 
@@ -482,7 +496,6 @@ header .menu{
     height: 49%;
     text-align: center;
     font-size: small;
-    background-color: #FF5C00;
 }
 
 @media screen and (min-width: 1024px) {
@@ -500,25 +513,27 @@ header .menu{
     }
 
     .servicos-vantagem {
-        width: 12vw;
-        height: 14vw;
+        width: 11.5vw;
+        height: 15vw;
         margin-bottom: unset;
+        padding: 10px;
     }
 }
 
 @media screen and (min-width: 1880px) {
     .servicos-box {
         margin-top: 150px;
+        padding: 0 3vw;
+        box-sizing: border-box;
     }
 
     .servicos-vantagem {
-        width: 13vw;
-        height: 14vw;
+        width: 11vw;
+        height: 13vw;
     }
 
     .vantagem-icone {
         font-size: 5.3rem;
-        margin: 1vw;
     }
 
     .vantagem-divisor {
@@ -527,7 +542,8 @@ header .menu{
     }
 
     .vantagem-texto {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        font-weight: 700;
     }
 }
 /* SERVIÇOS fim */
@@ -709,7 +725,7 @@ header .menu{
     }
 
     .conteudo-informacoes {
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
     }
 
@@ -739,6 +755,12 @@ header .menu{
 @media screen and (min-width: 1440px) {
     .contato-conteudo, .contato-titulo {
         width: 425px;
+    }
+}
+
+@media screen and (min-width: 1880px) {
+    .contato-conteudo, .contato-titulo {
+        width: 500px;
     }
 }
 /* CONTATO fim */
