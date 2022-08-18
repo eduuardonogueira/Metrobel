@@ -189,6 +189,7 @@ header .menu{
     .inicio-texto {
         width: 460px;
         text-align: unset;
+        font-size: 1rem;
     }
 
     .inicio-imagem {
