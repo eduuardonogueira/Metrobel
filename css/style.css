@@ -586,12 +586,12 @@ header .menu{
     background: #FF5C00;
     text-transform: uppercase;
     box-shadow: 3px 3px rgb(0, 0, 0);
+    animation: button-sites 3s ease-in-out infinite;
 }
 
 .button-mapa:hover {
     cursor: pointer;
     background-color: #ff2600;
-    animation: button-sites 3s ease-in-out infinite;
 }
 
 @keyframes button-sites {
