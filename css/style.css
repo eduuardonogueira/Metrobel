@@ -475,6 +475,17 @@ header .menu{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    box-shadow: 3px 3px rgb(145, 145, 145);
+}
+
+.servicos-vantagem:hover{
+    animation: card-servicos 1s forwards;
+}
+
+@keyframes card-servicos {
+    to {
+        transform: translateY(-20px);
+    }
 }
 
 .vantagem-icone {
@@ -566,6 +577,32 @@ header .menu{
 .mapa-texto {
     margin-top: 15px;
 }
+
+.button-mapa {
+    margin-top: 20px;
+    width: 70%;
+    padding: 15px 5%;
+    color: #FFFFFF;
+    background: #FF5C00;
+    text-transform: uppercase;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+}
+
+.button-mapa:hover {
+    cursor: pointer;
+    background-color: #ff2600;
+    animation: button-sites 3s ease-in-out infinite;
+}
+
+@keyframes button-sites {
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 
 @media screen and (min-width: 1024px) {
     .mapa {
