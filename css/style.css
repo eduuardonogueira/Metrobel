@@ -25,7 +25,8 @@ p {
 }
 
 /* MENU */
-.menu-nav{
+
+.menu-nav {
     display: none;
 }
 
@@ -53,6 +54,7 @@ header .menu{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    z-index: 2;
 }
 
 .menu-button {
@@ -127,6 +129,38 @@ header .menu{
     margin-top: 14vh;
     height: 30vh;
     padding: 0 20px;
+}
+
+.dash-left {
+    animation: dashleft 1.5s forwards;
+}
+
+@keyframes dashleft {
+    0%{
+        opacity: 0.2;
+        transform: translateX(100px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.dash-right {
+    animation: dashright 1.5s forwards;
+}
+
+@keyframes dashright {
+    0%{
+        opacity: 0.2;
+        transform: translateX(-100px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .inicio-imagem {
@@ -499,6 +533,7 @@ header .menu{
 
 .vantagem-divisor {
     width: 75%;
+    background-color: #2E2C2D;
 }
 
 .vantagem-texto {
@@ -580,19 +615,20 @@ header .menu{
 }
 
 .button-mapa {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 70%;
-    padding: 15px 5%;
+    padding: 20px 5%;
     color: #FFFFFF;
-    background: #FF5C00;
+    background: #FB8000;
     text-transform: uppercase;
-    box-shadow: 3px 3px rgb(0, 0, 0);
+    border: #2E2C2D 2px solid;
+    box-shadow: 3px 3px rgb(94, 94, 94);
     animation: button-sites 3s ease-in-out infinite;
 }
 
 .button-mapa:hover {
     cursor: pointer;
-    background-color: #ff2600;
+    background-color: #FF5C00;
 }
 
 @keyframes button-sites {
