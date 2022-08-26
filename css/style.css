@@ -17,15 +17,144 @@ h3 {
 h4 {
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 2rem ;
 }
 
 p {
     line-height: 1.1rem;
 }
 
-/* MENU */
+/* //////////////// Animaçaõ para a esquerda //////////////// */
+.dash-left {
+    animation: dashleft 1.5s forwards;
+}
 
+@keyframes dashleft {
+    0%{
+        opacity: 0.2;
+        transform: translateX(150px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/* //////////////////////////////// */
+
+
+/* //////////////// Animaçaõ para a direita //////////////// */
+.dash-right {
+    animation: dashright 1.5s forwards;
+}
+
+@keyframes dashright {
+    0%{
+        opacity: 0.2;
+        transform: translateX(-150px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/* //////////////////////////////// */
+
+
+/* //////////////// Animaçaõ para cima //////////////// */
+.dash-up {
+    animation: dashup 1.5s forwards;
+}
+
+@keyframes dashup {
+    0%{
+        opacity: 0.2;
+        transform: translateY(100px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* //////////////////////////////// */
+
+
+/* //////////////// Delay dos cards //////////////// */
+.servicos-vantagem:nth-child(1) {
+    opacity: 0;
+}
+.servicos-vantagem:nth-child(3) {
+    opacity: 0;
+    animation-delay: .2s;
+}
+.servicos-vantagem:nth-child(5) {
+    opacity: 0;
+    animation-delay: .3s;
+}
+.servicos-vantagem:nth-child(7) {
+    opacity: 0;
+    animation-delay: .4s;
+}
+.servicos-vantagem:nth-child(9) {
+    opacity: 0;
+    animation-delay: .5s;
+}
+.servicos-vantagem:nth-child(11) {
+    opacity: 0;
+    animation-delay: .6s;
+}
+
+.vantagem-divisor_mobile:nth-child(2) {
+    opacity: 0;
+}
+.vantagem-divisor_mobile:nth-child(4) {
+    opacity: 0;
+    animation-delay: .2s;
+}
+.vantagem-divisor_mobile:nth-child(6) {
+    opacity: 0;
+    animation-delay: .3s;
+}
+.vantagem-divisor_mobile:nth-child(8) {
+    opacity: 0;
+    animation-delay: .4s;
+}
+.vantagem-divisor_mobile:nth-child(10) {
+    opacity: 0;
+    animation-delay: .5s;
+}
+
+
+/* .vantagem-divisor_mobile:nth-child(1) {
+    opacity: 0;
+}
+.vantagem-divisor_mobile:nth-child(2) {
+    opacity: 0;
+    animation-delay: .2s;
+}
+.vantagem-divisor_mobile:nth-child(3) {
+    opacity: 0;
+    animation-delay: .3s;
+}
+.vantagem-divisor_mobile:nth-child(4) {
+    opacity: 0;
+    animation-delay: .4s;
+}
+.vantagem-divisor_mobile:nth-child(5) {
+    opacity: 0;
+    animation-delay: .5s;
+}
+.vantagem-divisor_mobile:nth-child(6) {
+    opacity: 0;
+    animation-delay: .6s;
+} */
+
+/* //////////////////////////////// */
+
+
+/* //////////////// MENU //////////////// */
 .menu-nav {
     display: none;
 }
@@ -113,9 +242,9 @@ header .menu{
         font-size: 1.1rem;
     }
 }
-/* MENU fim */
+/* //////////////////////////////// */
 
-/* INICIO */
+/* //////////////// INICIO //////////////// */
 .inicio {
     height: 100vh;
     display: flex;
@@ -129,38 +258,6 @@ header .menu{
     margin-top: 14vh;
     height: 30vh;
     padding: 0 20px;
-}
-
-.dash-left {
-    animation: dashleft 1.5s forwards;
-}
-
-@keyframes dashleft {
-    0%{
-        opacity: 0.2;
-        transform: translateX(100px);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.dash-right {
-    animation: dashright 1.5s forwards;
-}
-
-@keyframes dashright {
-    0%{
-        opacity: 0.2;
-        transform: translateX(-100px);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
 }
 
 .inicio-imagem {
@@ -268,10 +365,9 @@ header .menu{
         line-height: 5rem;
     }
 }
+/* //////////////////////////////// */
 
-/* INICIO fim */
-
-/* SOBRE */
+/* //////////////// SOBRE //////////////// */
 .sobre {
     padding: 50px 20px 20px;
 }
@@ -355,9 +451,9 @@ header .menu{
     }
 }
 
-/* SOBRE fim */
+/* //////////////////////////////// */
 
-/* REDE */
+/* //////////////// REDE //////////////// */
 .rede {
     padding: 20px;
     display: flex;
@@ -376,7 +472,7 @@ header .menu{
 
 .card {
     height: 140px;
-    width: 140px;
+    width: 40vw;
     padding: 0 10px;
     margin-bottom: 10px;
     display: flex;
@@ -402,9 +498,16 @@ header .menu{
     width: 312px;
 }
 
+@media screen and (min-width: 481px) {
+}
+
 @media screen and (min-width: 720px) {
     .rede-imagem {
         width: 40vw;
+    }
+
+    .card {
+        width: 140px;
     }
 }
 
@@ -480,9 +583,9 @@ header .menu{
         width: 600px;
     }
 }
-/* REDE fim */
+/* //////////////////////////////// */
 
-/* SERVICOS */
+/* //////////////// SERVIÇOS //////////////// */
 .servicos {
     display: flex;
     flex-direction: column;
@@ -494,55 +597,89 @@ header .menu{
 
 .servicos-box {
     display: flex;
-    width: 85vw;
+    width: 60vw;
+    height: 600px;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 50px;
 }
 
 .servicos-vantagem {
-    background-color: #FFFFFF;
-    height: 180px;
-    width: 130px;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    box-shadow: 3px 3px rgb(145, 145, 145);
-}
-
-.servicos-vantagem:hover{
-    animation: card-servicos 1s forwards;
-}
-
-@keyframes card-servicos {
-    to {
-        transform: translateY(-20px);
-    }
+    width: 100%;
+    height: 76px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .vantagem-icone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4rem;
-    height: 49%;
+    font-size: 3.5rem;
+    height: 56px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    color: #2E2C2D;
+    background-color: #FCAE1E;
 }
 
 .vantagem-divisor {
-    width: 75%;
-    background-color: #2E2C2D;
+    display: none;
 }
 
-.vantagem-texto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 49%;
-    text-align: center;
-    font-size: small;
+.vantagem-divisor_mobile {
+    width: 100%;
+    height: 1px;
+    background: #2E2C2D;
+}
+
+@media screen and (min-width: 720px){
+
+    .servicos-box {
+        width: 85vw;
+    }
+
+    .vantagem-divisor_mobile{
+        display: none;
+    }
+
+    .servicos-vantagem {
+        background-color: #FFFFFF;
+        height: 180px;
+        width: 130px;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-shadow: 3px 3px rgb(145, 145, 145);
+    }
+
+    .vantagem-icone {
+        background: none;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        height: 49%;
+    }
+
+    .vantagem-divisor {
+        display: flex;
+        width: 100px;
+        height: 1px;
+        background: #2E2C2D;
+    }
+
+    .vantagem-texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 49%;
+        text-align: center;
+        font-size: small;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -593,9 +730,10 @@ header .menu{
         font-weight: 700;
     }
 }
-/* SERVIÇOS fim */
+/* //////////////////////////////// */
 
-/* MAPA */
+
+/* //////////////// MAPA //////////////// */
 .mapa {
     display: flex;
     flex-direction: column;
@@ -618,11 +756,11 @@ header .menu{
     margin-top: 30px;
     width: 70%;
     padding: 20px 5%;
-    color: #FFFFFF;
+    color: #ffffff;
     background: #FB8000;
     text-transform: uppercase;
-    border: #2E2C2D 2px solid;
-    box-shadow: 3px 3px rgb(94, 94, 94);
+    border: none;
+    box-shadow: 2px 2px rgb(94, 94, 94);
     animation: button-sites 3s ease-in-out infinite;
 }
 
@@ -652,9 +790,10 @@ header .menu{
         width: 40vw;
     }
 }
-/* MAPA fim */
+/* //////////////////////////////// */
 
-/* CLIENTES */
+
+/* //////////////// CLIENTES //////////////// */
 .clientes {
     display: flex;
     flex-direction: column;
@@ -670,10 +809,12 @@ header .menu{
 .clientes-box {
     margin-top: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 85vw;
+    justify-content: space-around;
     flex-wrap: wrap;
+    height: auto;
+    width: 85vw;
 }
 
 .clientes-logo {
@@ -683,12 +824,16 @@ header .menu{
     flex-wrap: wrap;
     justify-content: space-around;
     height: 300px;
+    width: 40%;
 }
 
-@media screen and (min-width: 650px) {
-    .clientes-box {
-        flex-direction: row;
-        justify-content: space-around;
+.clientes-imagem {
+    width: 100%;
+}
+
+@media screen and (min-width: 481px) {
+    .clientes-logo {
+        width: 25%;
     }
 }
 
@@ -718,9 +863,10 @@ header .menu{
     }
 
 }
-/* CLIENTES fim */
+/* //////////////////////////////// */
 
-/* CONTATO */
+
+/* //////////////// CONTATO //////////////// */
 .contato {
     display: flex;
     flex-direction: column;
@@ -836,4 +982,4 @@ header .menu{
         width: 500px;
     }
 }
-/* CONTATO fim */
+/* //////////////////////////////// */

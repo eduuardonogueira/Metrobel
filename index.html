@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Metrobel</title>
 </head>
 <body>
     <header>
@@ -24,22 +24,22 @@
             </button>
             <ul id="nav" class="menu-nav">
                 <li>
-                    <a href="#" class="menu-button">
+                    <a href="#inicio" class="menu-button">
                         Início
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu-button">
+                    <a href="#sobre" class="menu-button">
                         Quem Somos
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu-button">
+                    <a href="#servicos" class="menu-button">
                         Serviços
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu-button">
+                    <a href="#contatos" class="menu-button">
                         Contatos
                     </a>
                 </li>
@@ -49,7 +49,7 @@
     </header>
     <main>
         <!-- INICIO -->
-        <section class="inicio">
+        <section id="inicio" class="inicio scrollspy">
             <div id="titulo-inicio" class="inicio-titulo">
                 <h2>
                     Conectando pessoas <br>
@@ -67,7 +67,7 @@
         <!-- INICIO fim -->
 
         <!-- SOBRE -->
-        <section class="sobre">
+        <section id="sobre" class="sobre scrollspy">
             <div class="sobre-titulo">
                     <h3>Quem somos</h3>
                     <h4>Conheça a Metrobel</h4>
@@ -91,19 +91,19 @@
         <section class="rede">
             <div class="rede-cards">
                 <ul class="card">
-                    <li class="card-titulo"><span data-value="60" data-direction="up" data-decimals="0" >60</span></li>
+                    <li id="valor1" class="card-titulo">60</li>
                     <li class="card-texto">Km de fibra</li>
                 </ul>
                 <ul class="card">
-                    <li class="card-titulo">160</li>
+                    <li id="valor2" class="card-titulo">160</li>
                     <li class="card-texto">sites conectados</li>
                 </ul>
                 <ul class="card">
-                    <li class="card-titulo">100</li>
+                    <li id="valor3" class="card-titulo">100</li>
                     <li class="card-texto">instituições conectadas</li>
                 </ul>
                 <ul class="card">
-                    <li class="card-titulo">2</li>
+                    <li id="valor4" class="card-titulo">2</li>
                     <li class="card-texto">concentradores</li>
                 </ul>
             </div>
@@ -112,15 +112,13 @@
         <!-- REDE fim -->
 
         <!-- SERVIÇOS -->
-        <section class="servicos">
+        <section id="servicos" class="servicos scrollspy">
             <div class="servicos-titulo texto-centralizado">
                 <h3>Serviços</h3>
                 <h4>
                     Faça parte da rede e <br>
                     obtenha conexão com<br>
                     diversas vantagens
-                    obtenha conexão ilimitada <br>
-                    e com diversas vantagens
                 </h4>
             </div>
             <div class="servicos-box">
@@ -135,6 +133,7 @@
                         que compõem a rede 
                     </li>
                 </ul>
+                <hr class="vantagem-divisor_mobile">
                 <!-- Card 2 -->
                 <ul class="servicos-vantagem">
                     <li class="vantagem-icone">
@@ -145,6 +144,7 @@
                         Conexões em L2
                     </li>
                 </ul> 
+                <hr class="vantagem-divisor_mobile">
                 <!-- Card 3 -->
                 <ul class="servicos-vantagem">
                     <li class="vantagem-icone">
@@ -155,6 +155,7 @@
                         Velocidade de até 1Gb
                     </li>
                 </ul> 
+                <hr class="vantagem-divisor_mobile">
                 <!-- Card 4 -->
                 <ul class="servicos-vantagem">
                     <li class="vantagem-icone">
@@ -165,6 +166,7 @@
                         Conexão direta com as redescomep do Brasil
                     </li>
                 </ul> 
+                <hr class="vantagem-divisor_mobile">
                 <!-- Card 5 -->
                 <ul class="servicos-vantagem">
                     <li class="vantagem-icone">
@@ -175,6 +177,7 @@
                         Redundância no link
                     </li>
                 </ul> 
+                <hr class="vantagem-divisor_mobile">
                 <!-- Card 6 -->
                 <ul class="servicos-vantagem">
                     <li class="vantagem-icone">
@@ -219,31 +222,31 @@
             </div>
             <div class="clientes-box">
                 <ul class="clientes-logo">
-                    <li><img src="./img/logo-cprm.png" alt=""></li>
-                    <li><img src="./img/logo-uepa.png" alt=""></li>
-                    <li><img src="./img/logo-embrapa.png" alt=""></li>
-                    <li><img src="./img/logo-mpeg.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-cprm.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-uepa.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-embrapa.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-mpeg.png" alt=""></li>
                 </ul>
                 <ul class="clientes-logo">
-                    <li><img src="./img/logo-iec.png" alt=""></li>
-                    <li><img src="./img/logo-ifpa.png" alt=""></li>
-                    <li><img src="./img/logo-ufpa.png" alt=""></li>
-                    <li><img src="./img/logo-unama.png" alt=""></li>
-                    <li><img src="./img/logo-cesupa.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-iec.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-ifpa.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-ufpa.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-unama.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-cesupa.png" alt=""></li>
                 </ul>
                 <ul class="clientes-logo">
-                    <li><img src="./img/logo-censipam.png" alt=""></li>
-                    <li><img src="./img/logo-hmue.png" alt=""></li>
-                    <li><img src="./img/logo-sectet.png" alt=""></li>
-                    <li><img src="./img/logo-itv.png" alt=""></li>
-                    <li><img src="./img/logo-santacasapara.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-censipam.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-hmue.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-sectet.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-itv.png" alt=""></li>
+                    <li><img class="clientes-imagem" src="./img/logo-santacasapara.png" alt=""></li>
                 </ul>
             </div>
         </section>
         <!-- CLIENTES fim -->
 
         <!-- CONTATO -->
-        <section class="contato">
+        <section id="contatos" class="contato scrollspy">
             <div class="contato-box texto-centralizado">
                 <ul class="contato-titulo">
                     <li>
@@ -286,7 +289,7 @@
         </section>
         <!-- CONTATO fim -->
     </main>
-
+    <script type="text/javascript" src="./assets/materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
