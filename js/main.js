@@ -12,7 +12,7 @@
 const dashright = new IntersectionObserver( entries => {
 
   Array.from(entries).forEach(entry => {
-    if (entry.intersectionRatio >= 0.5) {
+    if (entry.intersectionRatio >= 0.75) {
     entry.target.classList.add('dash-right')
     }
   })
@@ -20,7 +20,7 @@ const dashright = new IntersectionObserver( entries => {
 }, {
  threshold: [0.25 , 0.5 , 0.75 , 1]
 })
-Array.from(document.querySelectorAll('.inicio-titulo, .clientes-imagem, .mapa-titulo')).forEach( element => {
+Array.from(document.querySelectorAll('.inicio-titulo, .clientes-imagem, .mapa-titulo, .servicos-titulo')).forEach( element => {
 dashright.observe(element)
 })
 /* Animação para a direita - fim */
@@ -30,7 +30,7 @@ dashright.observe(element)
 const dashleft = new IntersectionObserver( entries => {
 
   Array.from(entries).forEach(entry => {
-    if (entry.intersectionRatio >= 0.5) {
+    if (entry.intersectionRatio >= 0.75) {
     entry.target.classList.add('dash-left')
     }
   })
@@ -48,7 +48,7 @@ dashleft.observe(element)
 const dashup = new IntersectionObserver( entries => {
 
   Array.from(entries).forEach(entry => {
-    if (entry.intersectionRatio >= 1) {
+    if (entry.intersectionRatio >= 0.75) {
     entry.target.classList.add('dash-up')
     }
   })
@@ -65,7 +65,6 @@ dashup.observe(element)
 /* Animação contador */
 let displayed = false;
 const contador = new IntersectionObserver( entries => {
-  console.log(entries)
     Array.from(entries).forEach(entry => {
       if (entry.intersectionRatio >= 1) {
         function action(){

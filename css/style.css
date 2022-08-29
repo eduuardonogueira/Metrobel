@@ -125,32 +125,6 @@ p {
     opacity: 0;
     animation-delay: .5s;
 }
-
-
-/* .vantagem-divisor_mobile:nth-child(1) {
-    opacity: 0;
-}
-.vantagem-divisor_mobile:nth-child(2) {
-    opacity: 0;
-    animation-delay: .2s;
-}
-.vantagem-divisor_mobile:nth-child(3) {
-    opacity: 0;
-    animation-delay: .3s;
-}
-.vantagem-divisor_mobile:nth-child(4) {
-    opacity: 0;
-    animation-delay: .4s;
-}
-.vantagem-divisor_mobile:nth-child(5) {
-    opacity: 0;
-    animation-delay: .5s;
-}
-.vantagem-divisor_mobile:nth-child(6) {
-    opacity: 0;
-    animation-delay: .6s;
-} */
-
 /* //////////////////////////////// */
 
 
@@ -258,12 +232,14 @@ header .menu{
     margin-top: 14vh;
     height: 30vh;
     padding: 0 20px;
+    opacity: 0;
 }
 
 .inicio-imagem {
     height:200px;
     width: 200px;
     margin-top: 4vh;
+    opacity: 0;
 }
 
 .inicio-texto {
@@ -496,6 +472,7 @@ header .menu{
 
 .rede-imagem {
     width: 312px;
+    opacity: 0;
 }
 
 @media screen and (min-width: 481px) {
@@ -595,6 +572,10 @@ header .menu{
     background: #F2F2F2;
 }
 
+.servicos-titulo {
+    opacity: 0;
+}
+
 .servicos-box {
     display: flex;
     width: 60vw;
@@ -682,6 +663,12 @@ header .menu{
     }
 }
 
+@media screen and (min-width: 800px) {
+    .servicos-box {
+        width: 675px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .servicos {
         padding: 4vw;
@@ -693,7 +680,8 @@ header .menu{
 
     .servicos-box {
         width: 90vw;
-        margin-top: 100px;
+        height: auto;
+        margin-top: 75px;
     }
 
     .servicos-vantagem {
@@ -723,6 +711,7 @@ header .menu{
     .vantagem-divisor {
         height: 2px;
         background-color: black;
+        width: 9vw;
     }
 
     .vantagem-texto {
@@ -743,9 +732,14 @@ header .menu{
     background: linear-gradient(#F2F2F2, #FFFFFF);
 }
 
+.mapa-titulo {
+    opacity: 0;
+}
+
 .mapa-imagem {
     margin-top: 50px;
     width: 85vw;
+    opacity: 0;
 }
 
 .mapa-texto {
@@ -802,6 +796,10 @@ header .menu{
     padding: 50px 20px;
 }
 
+.clientes-titulo {
+    opacity: 0;
+}
+
 .clientes-texto {
     margin-top: 20px;
 }
@@ -829,6 +827,7 @@ header .menu{
 
 .clientes-imagem {
     width: 100%;
+    opacity: 0;
 }
 
 @media screen and (min-width: 481px) {
@@ -859,9 +858,16 @@ header .menu{
 
 @media screen and (min-width: 1880px) {
     .clientes {
-        padding: 10vw 2vw;
+        padding: 4vw 4vw 8vw;
     }
 
+    .clientes-logo {
+        height: 400px;
+    }
+
+    .clientes-imagem {
+        width: 120%;
+    }
 }
 /* //////////////////////////////// */
 
