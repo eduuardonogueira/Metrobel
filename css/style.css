@@ -1,6 +1,4 @@
 body {
-    height: 100%;
-    width: 100%;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -219,124 +217,97 @@ header .menu{
 /* //////////////////////////////// */
 
 /* //////////////// INICIO //////////////// */
+.inicio-bg {
+    margin-top: 72px;
+    height: calc(100vh - 72px);
+    width: 100vw;
+    background: no-repeat url('../img/inicio-bg__mobile.png');
+    background-size: cover;
+    filter: brightness(30%);
+    z-index: -1;
+    position: fixed;
+    overflow-y: auto;
+}
+
 .inicio {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#FF5C00 , #FB8000 );
-}
-
-.inicio-titulo {
-    margin-top: 14vh;
-    height: 30vh;
-    padding: 0 20px;
-    opacity: 0;
-}
-
-.inicio-imagem {
-    height:200px;
-    width: 200px;
-    margin-top: 4vh;
-    opacity: 0;
+    padding-inline: 20px;
 }
 
 .inicio-texto {
     margin-top: 20px;
-    color: #FFFFFF;
+    color: #E0E0E0;
     text-align: center;
     font-size: small;
     line-height: 1rem;
 }
 
-@media screen and (min-width: 420px) {
-    .inicio-imagem {
-        margin-top: unset;
-        height: 60vw;
-        width: 60vw;
-    }
+.inicio-titulo {
+    color: #fff;
+    font-size: 28px;
+    line-height: 30px;
 
-    .inicio-texto {
-        width: 400px;
+    > span {
+        color: #FF5C00;
     }
 }
 
-@media screen and (min-width: 650px) {
-    h2 {
-        font-size: 2rem;
+@media screen and (min-width: 540px) {
+    .inicio-titulo {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
     }
 
-    .inicio-imagem {
-        height: 400px;
-        width: 400px;
+    .inicio-texto {
+        font-size: 16px;
+        line-height: 18px;
+        width: 500px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .inicio {
-        flex-direction: row;
-        justify-content: space-around;
-        background: linear-gradient(115deg, #FF5C00 , #FB8000);
-        padding:  0 4vw 72px;
+    .inicio-bg {
+        background: url("../img/inicio-bg__desktop.png");
     }
 
-    h2 {
+    .inicio-titulo {
         text-align: unset;
         font-size: 2.5rem;
         line-height: 3rem;
     }
 
-    .inicio-titulo {
-        padding: unset;
-        margin-top: 72px;
-        margin-left: 20px;
-    }
-
     .inicio-texto {
-        width: 460px;
-        text-align: unset;
+        width: 560px;
         font-size: 1rem;
-    }
-
-    .inicio-imagem {
-        margin-top: 72px;
-        height: 450px;
-        width: 450px;
     }
 } 
 @media screen and (min-width: 1240px) {
-    .inicio-imagem {
-        height: 550px;
-        width: 550px;
-    }
 
-    h2 {
+    .inicio-titulo {
         font-size: 2.8rem;
         line-height: 3rem;
     }
 }
 
 @media screen and (min-width: 1440px){
-    h2 {
+    .inicio-titulo {
         font-size: 3rem;
         line-height: 3rem;
     }
 }
 
 @media screen and (min-width: 1880px) {
-    .inicio-imagem {
-        height: 800px;
-        width: 800px;
-    }
-
-    p.inicio-texto {
+    .inicio-texto {
         font-size: 1.3rem;
         line-height: 1.5rem;
         width: 700px;
     }
 
-    h2 {
+    .inicio-titulo {
         font-size: 4.4rem;
         line-height: 5rem;
     }
@@ -346,6 +317,7 @@ header .menu{
 /* //////////////// SOBRE //////////////// */
 .sobre {
     padding: 50px 20px 20px;
+    background: #fff;
 }
 
 .sobre-titulo {
@@ -568,7 +540,7 @@ header .menu{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
     background: #F2F2F2;
 }
 
@@ -671,7 +643,7 @@ header .menu{
 
 @media screen and (min-width: 1024px) {
     .servicos {
-        padding: 4vw;
+        padding: 100px 4vw;
     }
     
     .servicos-titulo {
@@ -729,11 +701,16 @@ header .menu{
     align-items: center;
     justify-content: center;
     padding: 50px 20px 50px;
-    background: linear-gradient(#F2F2F2, #FFFFFF);
+    background: url("../img/mapa-bg.png");
+    background-size: cover;
 }
 
 .mapa-titulo {
     opacity: 0;
+    color: #fff;
+    > p {
+        color: #E0E0E0;
+    }
 }
 
 .mapa-imagem {
@@ -794,6 +771,7 @@ header .menu{
     align-items: center;
     justify-content: center;
     padding: 50px 20px;
+    background: #fff;
 }
 
 .clientes-titulo {
