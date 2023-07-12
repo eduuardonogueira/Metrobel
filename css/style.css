@@ -221,7 +221,7 @@ header .menu{
     margin-top: 72px;
     height: calc(100vh - 72px);
     width: 100vw;
-    background: no-repeat url('../img/inicio-bg__mobile.png');
+    background: no-repeat url('../img/inicio-bg__mobile.webp');
     background-size: cover;
     filter: brightness(30%);
     z-index: -1;
@@ -271,7 +271,8 @@ header .menu{
 
 @media screen and (min-width: 1024px) {
     .inicio-bg {
-        background: url("../img/inicio-bg__desktop.png");
+        background: no-repeat url("../img/inicio-bg__desktop.webp");
+        background-size: cover;
     }
 
     .inicio-titulo {
@@ -288,7 +289,7 @@ header .menu{
 @media screen and (min-width: 1240px) {
 
     .inicio-titulo {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         line-height: 3rem;
     }
 }
@@ -308,8 +309,8 @@ header .menu{
     }
 
     .inicio-titulo {
-        font-size: 4.4rem;
-        line-height: 5rem;
+        font-size: 3.5rem;
+        line-height: 3.8rem;
     }
 }
 /* //////////////////////////////// */
@@ -349,7 +350,7 @@ header .menu{
         text-align: unset;
     }
 
-    p, li, .vantagem-texto, .inicio-texto {
+    p, li, .vantagem-texto {
         font-size: 1rem;
         line-height: 1.2rem;
     }
@@ -701,7 +702,7 @@ header .menu{
     align-items: center;
     justify-content: center;
     padding: 50px 20px 50px;
-    background: url("../img/mapa-bg.png");
+    background: url("../img/mapa-bg.webp");
     background-size: cover;
 }
 
@@ -717,6 +718,8 @@ header .menu{
     margin-top: 50px;
     width: 85vw;
     opacity: 0;
+    background: #fff;
+    border-radius: 7px;
 }
 
 .mapa-texto {
