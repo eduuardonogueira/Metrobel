@@ -821,7 +821,7 @@ header .menu{
     .clientes {
         flex-direction: row-reverse;
         justify-content: space-around;
-        padding: 4vw 4vw 8vw;
+        padding: 8vw 4vw;
     }
 
     .clientes-box {
